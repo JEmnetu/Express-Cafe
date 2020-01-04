@@ -1,3 +1,13 @@
 .card{
     margin: 15px 10%;
 }
+
+#title-text{
+    text-decoration: none;
+    color: #212529;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
+}
+
+a:hover{
+   text-decoration: none;
+}
