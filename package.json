@@ -1,0 +1,28 @@
+{
+  "name": "express-restaurant",
+  "version": "1.0.0",
+  "description": "Make your reservation for the best restaurant in town!  How Not To Die.  Where we serve whole food plant based recipes scientifically proven to make your health stellar again.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JEmnetu/Express-Restaurant.git"
+  },
+  "keywords": [
+    "Restaurant",
+    "Express",
+    "Node"
+  ],
+  "author": "Keisha Shepherd, Jordyn Saltzman, Jacob Habtemarian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JEmnetu/Express-Restaurant/issues"
+  },
+  "homepage": "https://github.com/JEmnetu/Express-Restaurant#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
