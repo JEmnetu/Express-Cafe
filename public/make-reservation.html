@@ -64,5 +64,22 @@
             </div>
         </div>
     </div>
+    <script>
+    $("#add-btn").on("click", function(event) {
+        event.preventDefault();
+        var newReservation = {
+            name: $("#name").val().trim(),
+            party_size: $("#party-size").val().trim(),
+            time: $("#time").val().trim(),
+            email: $("#email").val().trim()
+        };
 
+        // Question: What does this code do??
+        $.post("/api/characters", newReservation)
+            .then(function(data) {
+            console.log("add.html", data);
+            alert("Adding character...");
+            });
+        });
+    </script>
 </html>
