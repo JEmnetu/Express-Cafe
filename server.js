@@ -42,9 +42,22 @@ app.get("/makeReservation", function(req, res) {
     res.sendFile(path.join(__dirname, "public/make-reservation.html"));
 });
 
+//POST Route
+app.post("/makeReservation", function(req, res) {
+    var newReservation = req.body;
+    console.log(newReservation);
+    if (rest_table_list.length < 5) {
+        rest_table_list.push(newReservation);
+    } else {
+        rest_wait_list.push(newReservation);
+    }
+    res.send(newReservation);
+});
+
 app.get("/api/reservation", function(req, res) {
     return res.json(rest_table_list);
 });
+
 
 app.get("/viewTables", function(req, res) {
     res.sendFile(path.join(__dirname, "public/view-tables.html"));
@@ -52,6 +65,7 @@ app.get("/viewTables", function(req, res) {
 app.get("/api/tables", function(req, res) {
     return res.json(rest_wait_list);
 });
+
 
 
 
