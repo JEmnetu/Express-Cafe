@@ -38,7 +38,17 @@ rest_wait_list =
 // Basic route that sends the user first to the AJAX Page
 app.get("/", function(req, res) {
     res.sendFile(path.join(__dirname, "public/index.html"));
-  });
+});
+
+app.get("/makeReservation", function(req, res) {
+    res.sendFile(path.join(__dirname, "public/make-reservation.html"));
+});
+
+app.get("/viewReservation", function(req, res) {
+    res.sendFile(path.join(__dirname, "public/make-reservation.html"));
+});
+
+
 
 // Starts the server to begin listening
 // =============================================================
