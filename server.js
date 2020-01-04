@@ -44,8 +44,8 @@ app.get("/makeReservation", function(req, res) {
     res.sendFile(path.join(__dirname, "public/make-reservation.html"));
 });
 
-app.get("/viewReservation", function(req, res) {
-    res.sendFile(path.join(__dirname, "public/make-reservation.html"));
+app.get("/viewTables", function(req, res) {
+    res.sendFile(path.join(__dirname, "public/view-tables.html"));
 });
 
 
