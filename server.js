@@ -54,6 +54,7 @@ app.post("/makeReservation", function(req, res) {
     res.send(newReservation);
 });
 
+
 app.get("/api/reservation", function(req, res) {
     return res.json(rest_table_list);
 });
@@ -62,7 +63,7 @@ app.get("/api/reservation", function(req, res) {
 app.get("/viewTables", function(req, res) {
     res.sendFile(path.join(__dirname, "public/view-tables.html"));
 });
-app.get("/api/tables", function(req, res) {
+app.get("/api/waitlist", function(req, res) {
     return res.json(rest_wait_list);
 });
 
